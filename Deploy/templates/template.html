@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #2A8B00;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #2A8B00;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #184F00;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right ;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 700px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #2A8B00;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+.topnav .search-container button:hover {
+  background: #184F00;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #9ec8ff;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Main</a>
+  <div class="search-container">
+     <form action = "http://127.0.0.1:5000/" method = "post">
+      <input type="text" placeholder="Please input an Airbnb listing detail, separated by commas" name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+<div style="padding-left:20px">
+  <h2> Airbnb Price Matching (for hosts) </h2>
+    <h3>Airbnb listing details:</h3>
+    <p>host_is_superhost</p>
+    <p>host_is_superhost</p>
+    <p>host_total_listings_count</p>
+    <p>host_identity_verified</p>
+    <p>accommodates</p>
+    <p>bathroom</p>
+    <p>bedrooms</p>
+    <p>beds</p>
+    <p>minimum_nights</p>
+    <p>availability_90</p>
+    <p>number_of_reviews</p>
+    <p>instant_bookable</p>
+    <p>internet</p>
+    <p>smoke alarm</p>
+    <p>heating</p>
+    <p>free dryer</p>
+    <p>long term stays allowed</p>
+    <p>essentials</p>
+    <p>free washer</p>
+    <p>closet</p>
+    <p>tv</p>
+    <p>hot water</p>
+    <p>iron</p>
+    <p>air conditioning</p>
+    <p>refrigerator</p>
+    <p>dishes and silverware</p>
+    <p>cooking basics</p>
+    <p>oven</p>
+    <p>stove</p>
+    <p>microwave</p>
+    <p>coffee maker</p>
+    <p>free parking</p>
+    <p>bed linens</p>
+    <p>carbon monoxide alarm</p>
+    <p>first aid kit</p>
+    <p>patio or balcony</p>
+    <p>private entrance</p>
+    <p>extra pillows and blankets</p>
+    <p>bathtub</p>
+    <p>paid parking</p>
+    <p>freezer</p>
+    <p>cleaning products</p>
+    <p>toaster</p>
+    <p>luggage dropoff allowed</p>
+    <p>dining table</p>
+    <p>hot water kettle</p>
+    <p>elevator</p>
+    <p>lockbox</p>
+    <p>security cameras on property</p>
+    <p>bbq</p>
+    <p>keypad</p>
+    <p>outdoor dining area</p>
+    <p>host greets you</p>
+    <p>lock on bedroom door</p>
+    <p>pool</p>
+    <p>portable fans</p>
+    <p>gym</p>
+    <p>backyard</p>
+    <p>children friendly</p>
+    <p>cleaning before checkout</p>
+    <p>breakfast</p>
+    <p>paid dryer</p>
+    <p>paid washer</p>
+    <p>host_response_time_unknown</p>
+    <p>host_response_time_within a day</p>
+    <p>host_response_time_within a few hours</p>
+    <p>host_response_time_within an hour</p>
+    <p>host_response_rate_100%</p>
+    <p>host_response_rate_70% - 89%</p>
+    <p>host_response_rate_90% - 99%</p>
+    <p>host_response_rate_unknown</p>
+    <p>host_acceptance_rate_100%</p>
+    <p>host_acceptance_rate_80%-99%</p>
+    <p>host_acceptance_rate_unknown</p>
+    <p>neighbourhoods_Anjou</p>
+    <p>neighbourhoods_Baie-d'Urfé</p>
+    <p>neighbourhoods_Beaconsfield</p>
+    <p>neighbourhoods_Côte-Saint-Luc</p>
+    <p>neighbourhoods_Côte-des-Neiges-Notre-Dame-de-Grâce</p>
+    <p>neighbourhoods_Dollard-des-Ormeaux</p>
+    <p>neighbourhoods_Dorval</p>
+    <p>neighbourhoods_Hampstead</p>
+    <p>neighbourhoods_Kirkland</p>
+    <p>neighbourhoods_L'Île-Bizard-Sainte-Geneviève</p>
+    <p>neighbourhoods_LaSalle</p>
+    <p>neighbourhoods_Lachine</p>
+    <p>neighbourhoods_Le Plateau-Mont-Royal</p>
+    <p>neighbourhoods_Le Sud-Ouest</p>
+    <p>neighbourhoods_Mercier-Hochelaga-Maisonneuve</p>
+    <p>neighbourhoods_Mont-Royal</p>
+    <p>neighbourhoods_Montréal-Est</p>
+    <p>neighbourhoods_Montréal-Nord</p>
+    <p>neighbourhoods_Montréal-Ouest</p>
+    <p>neighbourhoods_Outremont</p>
+    <p>neighbourhoods_Pierrefonds-Roxboro</p>
+    <p>neighbourhoods_Pointe-Claire</p>
+    <p>neighbourhoods_Rivière-des-Prairies-Pointe-aux-Trembles</p>
+    <p>neighbourhoods_Rosemont-La Petite-Patrie</p>
+    <p>neighbourhoods_Saint-Laurent</p>
+    <p>neighbourhoods_Saint-Léonard</p>
+    <p>neighbourhoods_Sainte-Anne-de-Bellevue</p>
+    <p>neighbourhoods_Senneville</p>
+    <p>neighbourhoods_Verdun</p>
+    <p>neighbourhoods_Ville-Marie</p>
+    <p>neighbourhoods_Villeray-Saint-Michel-Parc-Extension</p>
+    <p>neighbourhoods_Westmount</p>
+    <p>property_type_House</p>
+    <p>property_type_Other</p>
+    <p>room_type_Hotel room</p>
+    <p>room_type_Private room</p>
+    <p>room_type_Shared room</p>
+    <p>review_scores_rating_(3-4)/5</p>
+    <p>review_scores_rating_(4-4.5)/5</p>
+    <p>review_scores_rating_(4.5-5)/5</p>
+    <p>review_scores_rating_no score</p>
+    <p>review_scores_accuracy_(3-4)/5</p>
+    <p>review_scores_accuracy_(4-4.5)/5</p>
+    <p>review_scores_accuracy_(4.5-5)/5</p>
+    <p>review_scores_accuracy_no score</p>
+    <p>review_scores_cleanliness_(3-4)/5</p>
+    <p>review_scores_cleanliness_(4-4.5)/5</p>
+    <p>review_scores_cleanliness_(4.5-5)/5</p>
+    <p>review_scores_cleanliness_no score</p>
+    <p>review_scores_checkin_(3-4)/5</p>
+    <p>review_scores_checkin_(4-4.5)/5</p>
+    <p>review_scores_checkin_(4.5-5)/5</p>
+    <p>review_scores_checkin_no score</p>
+    <p>review_scores_communication_(3-4)/5</p>
+    <p>review_scores_communication_(4-4.5)/5</p>
+    <p>review_scores_communication_(4.5-5)/5</p>
+    <p>review_scores_communication_no score</p>
+    <p>review_scores_location_(3-4)/5</p>
+    <p>review_scores_location_(4-4.5)/5</p>
+    <p>review_scores_location_(4.5-5)/5</p>
+    <p>review_scores_location_no score</p>
+    <p>review_scores_value_(3-4)/5</p>
+    <p>review_scores_value_(4-4.5)/5</p>
+    <p>review_scores_value_(4.5-5)/5</p>
+    <p>review_scores_value_no score</p>
+    <p>days_since_first_review_1-2 years</p>
+    <p>days_since_first_review_2-4 years</p>
+    <p>days_since_first_review_4+ years</p>
+    <p>days_since_first_review_6-12 months</p>
+    <p>days_since_first_review_no reviews</p>
+    <p>days_since_last_review_1+ years</p>
+    <p>days_since_last_review_2-6 months</p>
+    <p>days_since_last_review_2-8 weeks</p>
+    <p>days_since_last_review_6-12 months</p>
+    <p>days_since_last_review_no reviews</p>
+</div>
+
+</body>
+</html>
