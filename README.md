@@ -36,6 +36,8 @@ Pickle
 
 ![App Screenshot](https://github.com/smp91/CB-DS-Final_Project/blob/master/Screenshots/Screenshot%202022-10-25%20082243.jpg)
 
+![App Screenshot](https://github.com/smp91/Airbnb-Price-Prediction/blob/master/Screenshots/Screenshot%202022-10-25%20173732.jpg)
+
 ![App Screenshot](https://github.com/smp91/CB-DS-Final_Project/blob/master/Screenshots/Screenshot%202022-10-25%20082405.jpg)
 
 ![App Screenshot](https://github.com/smp91/CB-DS-Final_Project/blob/master/Screenshots/Screenshot%202022-10-25%20082447.jpg)
@@ -43,6 +45,8 @@ Pickle
 ![App Screenshot](https://github.com/smp91/CB-DS-Final_Project/blob/master/Screenshots/Screenshot%202022-10-25%20082549.jpg)
 
 ![App Screenshot](https://github.com/smp91/CB-DS-Final_Project/blob/master/Screenshots/Screenshot%202022-10-25%20082700.jpg)
+
+
 
 ## Conclusion
 By comparing different models in which the lower the MSE and higher the R Squared, is the more accurate model, we can see that the Random Forest Regression and XGBoost Regression model showed the best results and predictions (these models were created for several different combinations of train-test-splits, in all different combinations Random Forest and XGBoost had the highest accuracy and showed extremely close results. However, in most cases the XGBoost model had a slightly more accurate prediction.
